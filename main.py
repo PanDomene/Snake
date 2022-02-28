@@ -24,7 +24,6 @@ def game():
     while snake_is_alive:
         screen.update()
         time.sleep(0.03)
-        # time.sleep(0.2/difficulty)
         snake.move()
         if snake.head.distance(food.position()) < 12:
             food.move()
@@ -41,7 +40,6 @@ def game():
             if snake.head.distance(segment) < 10:
                 snake_is_alive = False
     otra_vez = screen.textinput("Pelas!", "Quieres jugar otra vez?")
-    print(otra_vez)
     if otra_vez.lower() == 'si' or otra_vez == 's':
         screen.clear()
         game()

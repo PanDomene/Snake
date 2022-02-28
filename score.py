@@ -20,5 +20,4 @@ class Scoreboard(Turtle):
         with open('high_score.txt', 'r') as f:
             if self.score > int(f.read()):
                 self.high_score = self.score
-                print(self.high_score)
         self.write(f"Score: {self.score},  High Score: {self.high_score}", align='center', font=('arial', 16, 'normal'))
