@@ -2,6 +2,7 @@ import random
 from turtle import Turtle
 
 
+#Al inicio del juego y cada vez que se come, crea un cuadrito de comida nuevo en una ubicación al azar
 class Food(Turtle):
     def __init__(self):
         super().__init__()
